@@ -1,6 +1,7 @@
 import React from 'react';
 import GridFilters from './sections/GridFilters';
 import GridPlatform from './sections/GridPlatform';
+import GridSales from './sections/GridSales'; // Import here
 
 const Grid = () => {
   return (
@@ -8,19 +9,13 @@ const Grid = () => {
       
       {/* --- LEFT COLUMN --- */}
       <div className="flex flex-col gap-6">
-        
-        {/* 1. Top Row: Filters & Vertical Chart */}
         <GridFilters />
-        
-        {/* 2. Bottom Row: Platform Value Chart */}
         <GridPlatform />
-
       </div>
 
       {/* --- RIGHT COLUMN --- */}
-      {/* This will hold the tall Sales Dynamic section */}
-      <div className="bg-white rounded-3xl border border-border/60 shadow-sm h-full min-h-[500px] flex items-center justify-center text-text-secondary">
-          Next: Sales Dynamic Column
+      <div className="h-full">
+         <GridSales />
       </div>
 
     </div>
