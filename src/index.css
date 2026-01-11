@@ -1,35 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
-
 @theme {
-  --color-brand: #E11D48; /* The hot pink/red accent */
+  --color-brand: #E11D48;
   --color-brand-hover: #BE123C;
   
-  --color-bg-main: #F2F3F5; /* The light grey background behind the dashboard */
-  --color-surface: #FFFFFF; /* White cards */
+  /* Shell Colors (Sidebar/Header) */
+  --color-surface: #FFFFFF; 
   
-  --color-text-primary: #111827; /* Dark headings */
-  --color-text-secondary: #6B7280; /* Muted text */
-  --color-border: #E5E7EB; /* Subtle borders */
+  /* Page Content Background */
+  --color-bg-main: #F3F4F6; /* Slightly darker to make white cards pop */
+  
+  --color-text-primary: #111827;
+  --color-text-secondary: #6B7280;
+  --color-border: #E5E7EB;
 }
 
-/* Base Styles */
 :root {
   font-family: 'Inter', sans-serif;
-  background-color: var(--color-bg-main);
+  /* The outer window background is White */
+  background-color: var(--color-surface); 
   color: var(--color-text-primary);
 }
 
-/* Custom Scrollbar for the sidebar/content */
+/* Hide scrollbar for cleaner UI */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-}
-::-webkit-scrollbar-track {
+  width: 0px;
   background: transparent;
-}
-::-webkit-scrollbar-thumb {
-  background: #D1D5DB;
-  border-radius: 10px;
 }
