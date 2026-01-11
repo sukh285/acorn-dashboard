@@ -1,5 +1,6 @@
 import React from 'react';
 import GridFilters from './sections/GridFilters';
+import GridPlatform from './sections/GridPlatform';
 
 const Grid = () => {
   return (
@@ -12,9 +13,7 @@ const Grid = () => {
         <GridFilters />
         
         {/* 2. Bottom Row: Platform Value Chart */}
-        <div className="bg-white rounded-3xl h-64 border border-border/60 shadow-sm flex items-center justify-center text-text-secondary">
-           Next: Platform Value Chart
-        </div>
+        <GridPlatform />
 
       </div>
 
