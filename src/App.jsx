@@ -1,10 +1,12 @@
 import React from 'react'
+import MainLayout from './components/layout/MainLayout'
+import Dashboard from './pages/Dashboard'
 
 const App = () => {
   return (
-    <div>
-      
-    </div>
+    <MainLayout>
+      <Dashboard />
+    </MainLayout>
   )
 }
 
