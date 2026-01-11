@@ -16,8 +16,8 @@ const MainLayout = ({ children }) => {
         <Header />
         
         {/* 3. Floating Content Wrapper */}
-        <div className="flex-1 bg-surface relative">
-            <main className="absolute inset-0 bg-bg-main rounded-tl-3xl overflow-y-auto p-8 no-scrollbar border-t border-l border-white/50 shadow-inner">
+        <div className="flex-1 bg-surface relative m-2">
+            <main className="absolute inset-0 bg-bg-main rounded-3xl overflow-y-auto p-8 no-scrollbar border-white/50 shadow-inner">
                 {children || <Outlet />}
             </main>
         </div>
