@@ -1,6 +1,7 @@
 import React from 'react';
 import DashHeader from './sections/DashHeader';
 import DashRevenue from './sections/DashRevenue';
+import Grid from './Grid';
 
 const Dashboard = () => {
   return (
@@ -11,8 +12,8 @@ const Dashboard = () => {
       {/* 2. Revenue & Cards Row */}
       <DashRevenue />
 
-      {/* 3. Placeholder for Next Steps */}
-      <div className="h-4 w-full"></div> 
+      {/* 3. Grid Section (New) */}
+      <Grid />
     </div>
   );
 };
